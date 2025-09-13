@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Camp - Save Lives, Donate Blood</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-heartbeat text-danger me-2"></i>
+                <strong>BloodCare</strong>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eligibility.html">Eligibility</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="d-flex">
+                <a class="btn btn-danger" href="register.html">
+                    <i class="fas fa-plus me-2"></i>Register as Donor
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6">
+                        <h1 class="hero-title">Save Lives Through Blood Donation</h1>
+                        <p class="hero-subtitle">Join our mission to ensure a steady supply of safe blood for patients in need. Every drop counts, every donor matters.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-danger btn-lg me-3" data-bs-toggle="modal" data-bs-target="#donorModal">
+                                <i class="fas fa-heart me-2"></i>Donate Now
+                            </button>
+                            <a class="btn btn-outline-light btn-lg" href="about.html">
+                                <i class="fas fa-play me-2"></i>Get Started
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <h3 class="stat-number" data-target="5000">0</h3>
+                                <p>Lives Saved</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number" data-target="2500">0</h3>
+                                <p>Donors Registered</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number" data-target="50">0</h3>
+                                <p>Camps Organized</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">About Blood Donation</h2>
+                <p class="section-subtitle">Understanding the importance and process of blood donation</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="about-card text-center">
+                        <div class="about-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Safe & Secure</h4>
+                        <p>All donations are collected under strict medical supervision with sterile equipment and proper safety protocols.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="about-card text-center">
+                        <div class="about-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Quick Process</h4>
+                        <p>The entire donation process takes only 30-45 minutes, including registration, screening, and donation.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="about-card text-center">
+                        <div class="about-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Community Impact</h4>
+                        <p>Your donation can save up to 3 lives and helps maintain a stable blood supply for emergencies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaigns Section -->
+    <section id="campaigns" class="campaigns-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Upcoming Blood Donation Camps</h2>
+                <p class="section-subtitle">Join our upcoming campaigns and make a difference</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="campaign-card">
+                        <div class="campaign-date">
+                            <span class="day">15</span>
+                            <span class="month">Dec</span>
+                        </div>
+                        <div class="campaign-content">
+                            <h5>Community Center Camp</h5>
+                            <p><i class="fas fa-map-marker-alt me-2"></i>Central Community Center</p>
+                            <p><i class="fas fa-clock me-2"></i>9:00 AM - 5:00 PM</p>
+                            <p><i class="fas fa-users me-2"></i>Target: 100 donors</p>
+                            <button class="btn btn-danger btn-sm">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="campaign-card">
+                        <div class="campaign-date">
+                            <span class="day">22</span>
+                            <span class="month">Dec</span>
+                        </div>
+                        <div class="campaign-content">
+                            <h5>University Campus Drive</h5>
+                            <p><i class="fas fa-map-marker-alt me-2"></i>Main University Campus</p>
+                            <p><i class="fas fa-clock me-2"></i>10:00 AM - 6:00 PM</p>
+                            <p><i class="fas fa-users me-2"></i>Target: 150 donors</p>
+                            <button class="btn btn-danger btn-sm">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="campaign-card">
+                        <div class="campaign-date">
+                            <span class="day">29</span>
+                            <span class="month">Dec</span>
+                        </div>
+                        <div class="campaign-content">
+                            <h5>Corporate Office Camp</h5>
+                            <p><i class="fas fa-map-marker-alt me-2"></i>Tech Park Office Complex</p>
+                            <p><i class="fas fa-clock me-2"></i>11:00 AM - 7:00 PM</p>
+                            <p><i class="fas fa-users me-2"></i>Target: 80 donors</p>
+                            <button class="btn btn-danger btn-sm">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Process Section -->
+    <section class="process-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">How Blood Donation Works</h2>
+                <p class="section-subtitle">Simple steps to save lives</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="process-step text-center">
+                        <div class="step-number">1</div>
+                        <h5>Registration</h5>
+                        <p>Fill out the donor form with your basic information and medical history.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-step text-center">
+                        <div class="step-number">2</div>
+                        <h5>Screening</h5>
+                        <p>Medical staff will check your hemoglobin level, blood pressure, and temperature.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-step text-center">
+                        <div class="step-number">3</div>
+                        <h5>Donation</h5>
+                        <p>The actual donation takes about 8-10 minutes to collect one unit of blood.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-step text-center">
+                        <div class="step-number">4</div>
+                        <h5>Recovery</h5>
+                        <p>Rest for 15-20 minutes with refreshments before leaving.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility Section -->
+    <section id="eligibility" class="eligibility-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Donor Eligibility</h2>
+                    <p class="mb-4">Before donating blood, please ensure you meet these basic requirements:</p>
+                    
+                    <div class="eligibility-list">
+                        <div class="eligibility-item">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>Age between 18-65 years</span>
+                        </div>
+                        <div class="eligibility-item">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>Weight at least 50 kg (110 lbs)</span>
+                        </div>
+                        <div class="eligibility-item">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>Hemoglobin level 12.5 g/dL or higher</span>
+                        </div>
+                        <div class="eligibility-item">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>Good general health</span>
+                        </div>
+                        <div class="eligibility-item">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>No recent tattoos or piercings (within 6 months)</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-danger mt-3" data-bs-toggle="modal" data-bs-target="#eligibilityModal">
+                        Check Your Eligibility
+                    </button>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="eligibility-image">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Blood Donation" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donor Registration Modal -->
+    <div class="modal fade" id="donorModal" tabindex="-1" aria-labelledby="donorModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="donorModalLabel">
+                        <i class="fas fa-heart me-2"></i>Donor Registration Form
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="donorForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name *</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name *</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label for="city" class="form-label">City</label>
+                                <input type="text" class="form-control" id="city" placeholder="e.g., Delhi">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="state" class="form-label">State</label>
+                                <input type="text" class="form-control" id="state" placeholder="e.g., Delhi">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="pincode" class="form-label">Pincode</label>
+                                <input type="text" class="form-control" id="pincode" placeholder="e.g., 110001">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="age" class="form-label">Age *</label>
+                                <input type="number" class="form-control" id="age" min="18" max="65" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="weight" class="form-label">Weight (kg) *</label>
+                                <input type="number" class="form-control" id="weight" min="50" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="bloodType" class="form-label">Blood Type *</label>
+                                <select class="form-select" id="bloodType" required>
+                                    <option value="">Select Blood Type</option>
+                                    <option value="A+">A+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B-">B-</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="AB-">AB-</option>
+                                    <option value="O+">O+</option>
+                                    <option value="O-">O-</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="preferredCamp" class="form-label">Preferred Camp</label>
+                                <select class="form-select" id="preferredCamp">
+                                    <option value="">Select Camp</option>
+                                    <option value="community">Community Center Camp (Dec 15)</option>
+                                    <option value="university">University Campus Drive (Dec 22)</option>
+                                    <option value="corporate">Corporate Office Camp (Dec 29)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="medicalHistory" class="form-label">Medical History</label>
+                            <textarea class="form-control" id="medicalHistory" rows="3" placeholder="Any medical conditions, medications, or recent surgeries..."></textarea>
+                        </div>
+                        
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                            <label class="form-check-label" for="agreeTerms">
+                                I agree to the terms and conditions and confirm that all information provided is accurate.
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" form="donorForm" class="btn btn-danger">
+                        <i class="fas fa-heart me-2"></i>Submit Registration
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Eligibility Check Modal -->
+    <div class="modal fade" id="eligibilityModal" tabindex="-1" aria-labelledby="eligibilityModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="eligibilityModalLabel">
+                        <i class="fas fa-clipboard-check me-2"></i>Eligibility Checker
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="eligibilityForm">
+                        <div class="mb-3">
+                            <label for="checkAge" class="form-label">Age</label>
+                            <input type="number" class="form-control" id="checkAge" min="16" max="70" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="checkWeight" class="form-label">Weight (kg)</label>
+                            <input type="number" class="form-control" id="checkWeight" min="40" max="200" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="checkHealth" class="form-label">General Health</label>
+                            <select class="form-select" id="checkHealth" required>
+                                <option value="">Select Health Status</option>
+                                <option value="excellent">Excellent</option>
+                                <option value="good">Good</option>
+                                <option value="fair">Fair</option>
+                                <option value="poor">Poor</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="checkRecent" class="form-label">Recent Medical Procedures</label>
+                            <select class="form-select" id="checkRecent" required>
+                                <option value="">Select Option</option>
+                                <option value="none">None in last 6 months</option>
+                                <option value="tattoo">Tattoo/Piercing in last 6 months</option>
+                                <option value="surgery">Surgery in last 6 months</option>
+                                <option value="other">Other procedures</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="checkEligibility()">
+                        <i class="fas fa-search me-2"></i>Check Eligibility
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blood Stock Section -->
+    <section id="stock" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Blood Stock Availability</h2>
+                <p class="section-subtitle">Real-time overview of available units by blood group</p>
+            </div>
+            <div id="stockGrid" class="row g-4">
+                <!-- Cards populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Donor Search Section -->
+    <section id="search" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Find Donors</h2>
+                <p class="section-subtitle">Search donors by blood type and location</p>
+            </div>
+            <form id="searchForm" class="row g-3 mb-4">
+                <div class="col-md-3">
+                    <label class="form-label">Blood Type</label>
+                    <select id="searchBlood" class="form-select" required>
+                        <option value="">Select</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">City</label>
+                    <input id="searchCity" class="form-control" placeholder="City">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">State</label>
+                    <input id="searchState" class="form-control" placeholder="State">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Pincode</label>
+                    <input id="searchPincode" class="form-control" placeholder="Pincode">
+                </div>
+                <div class="col-12 text-end">
+                    <button class="btn btn-danger" type="submit"><i class="fas fa-search me-2"></i>Search</button>
+                </div>
+            </form>
+            <div id="searchResults" class="row g-3">
+                <!-- Results populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you!</p>
+            </div>
+            
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100">
+                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h5>Address</h5>
+                                <p>123 Health Street, Medical District<br>City, State 12345</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p>info@bloodcare.org</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h5>Office Hours</h5>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning mb-3">
+                        <i class="fas fa-heartbeat me-2"></i>BloodCare
+                    </h5>
+                    <p>Dedicated to saving lives through voluntary blood donation. Join our mission to ensure a stable blood supply for our community.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-2 mb-4">
+                    <h5 class="text-warning mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="eligibility.html" class="text-white">Eligibility</a></li>
+                        <li><a href="register.html" class="text-white">Register</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                        <li><a href="login.html" class="text-white">Login</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-warning mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li>Blood Donation Camps</li>
+                        <li>Donor Registration</li>
+                        <li>Blood Testing</li>
+                        <li>Emergency Response</li>
+                        <li>Community Education</li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-warning mb-3">Emergency Contact</h5>
+                    <p><i class="fas fa-phone me-2"></i>24/7 Hotline: 1-800-BLOOD</p>
+                    <p><i class="fas fa-ambulance me-2"></i>Emergency: 911</p>
+                    <p><i class="fas fa-hospital me-2"></i>Nearest Center: City Hospital</p>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">© 2025 BloodCare. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Made with <i class="fas fa-heart text-danger"></i> for humanity</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

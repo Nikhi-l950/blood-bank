@@ -1,0 +1,42 @@
+{
+  "name": "blood-donation-camp-website",
+  "version": "1.0.0",
+  "description": "A comprehensive website for organizing blood donation camps and managing donor registrations",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build process required for static HTML site'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "blood-donation",
+    "healthcare",
+    "community-service",
+    "donor-management",
+    "campaign-organization",
+    "medical-awareness",
+    "social-responsibility"
+  ],
+  "author": "BloodCare Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/blood-donation-camp-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/blood-donation-camp-website/issues"
+  },
+  "homepage": "https://yourusername.github.io/blood-donation-camp-website",
+  "devDependencies": {},
+  "dependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
